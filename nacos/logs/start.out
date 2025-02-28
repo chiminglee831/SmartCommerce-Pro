@@ -1,11 +1,11 @@
-/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java    -Xms512m -Xmx512m -Xmn256m -Dnacos.standalone=true -Dnacos.member.list= -Xlog:gc*:file=/Users/jimmylee/Documents/resume/project/SmartCommerce-Pro/SmartCommerce-Pro/nacos/logs/nacos_gc.log:time,tags:filecount=10,filesize=100m -Dloader.path=/Users/jimmylee/Documents/resume/project/SmartCommerce-Pro/SmartCommerce-Pro/nacos/plugins,/Users/jimmylee/Documents/resume/project/SmartCommerce-Pro/SmartCommerce-Pro/nacos/plugins/health,/Users/jimmylee/Documents/resume/project/SmartCommerce-Pro/SmartCommerce-Pro/nacos/plugins/cmdb,/Users/jimmylee/Documents/resume/project/SmartCommerce-Pro/SmartCommerce-Pro/nacos/plugins/selector -Dnacos.home=/Users/jimmylee/Documents/resume/project/SmartCommerce-Pro/SmartCommerce-Pro/nacos -jar /Users/jimmylee/Documents/resume/project/SmartCommerce-Pro/SmartCommerce-Pro/nacos/target/nacos-server.jar  --spring.config.additional-location=file:/Users/jimmylee/Documents/resume/project/SmartCommerce-Pro/SmartCommerce-Pro/nacos/conf/ --logging.config=/Users/jimmylee/Documents/resume/project/SmartCommerce-Pro/SmartCommerce-Pro/nacos/conf/nacos-logback.xml --server.max-http-header-size=524288
+/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java   -Xms512m -Xmx512m -Xmn256m -Dnacos.standalone=true -Dnacos.member.list= -Xlog:gc*:file=/Users/jimmylee/Documents/resume/project/distributed_smartcommerce/SmartCommerce-Pro/nacos/logs/nacos_gc.log:time,tags:filecount=10,filesize=100m -Dloader.path=/Users/jimmylee/Documents/resume/project/distributed_smartcommerce/SmartCommerce-Pro/nacos/plugins,/Users/jimmylee/Documents/resume/project/distributed_smartcommerce/SmartCommerce-Pro/nacos/plugins/health,/Users/jimmylee/Documents/resume/project/distributed_smartcommerce/SmartCommerce-Pro/nacos/plugins/cmdb,/Users/jimmylee/Documents/resume/project/distributed_smartcommerce/SmartCommerce-Pro/nacos/plugins/selector -Dnacos.home=/Users/jimmylee/Documents/resume/project/distributed_smartcommerce/SmartCommerce-Pro/nacos -jar /Users/jimmylee/Documents/resume/project/distributed_smartcommerce/SmartCommerce-Pro/nacos/target/nacos-server.jar  --spring.config.additional-location=file:/Users/jimmylee/Documents/resume/project/distributed_smartcommerce/SmartCommerce-Pro/nacos/conf/ --logging.config=/Users/jimmylee/Documents/resume/project/distributed_smartcommerce/SmartCommerce-Pro/nacos/conf/nacos-logback.xml --server.max-http-header-size=524288
 
          ,--.
        ,--.'|
-   ,--,:  : |                                           Nacos 2.5.0
+   ,--,:  : |                                           Nacos 2.2.3
 ,`--.'`|  ' :                       ,---.               Running in stand alone mode, All function modules
 |   :  :  | |                      '   ,'\   .--.--.    Port: 8848
-:   |   \ | :  ,--.--.     ,---.  /   /   | /  /    '   Pid: 2445
+:   |   \ | :  ,--.--.     ,---.  /   /   | /  /    '   Pid: 20992
 |   : '  '; | /       \   /     \.   ; ,. :|  :  /`./   Console: http://192.168.1.75:8848/nacos/index.html
 '   ' ;.    ;.--.  .-. | /    / ''   | |: :|  :  ;_
 |   | | \   | \__\/: . ..    ' / '   | .; : \  \    `.      https://nacos.io
@@ -15,39 +15,25 @@
 ;   |.'     |  ,     .-./\   \  /            `--'---'
 '---'        `--`---'     `----'
 
-2025-02-26 14:21:08,249 INFO Tomcat initialized with port(s): 8848 (http)
+2025-02-27 23:02:20,627 INFO Tomcat initialized with port(s): 8848 (http)
 
-2025-02-26 14:21:08,418 INFO Root WebApplicationContext: initialization completed in 1302 ms
+2025-02-27 23:02:20,662 INFO Root WebApplicationContext: initialization completed in 1268 ms
 
-2025-02-26 14:21:10,416 INFO Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@630bf683, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@22d322f5, org.springframework.security.web.context.SecurityContextPersistenceFilter@485caa8f, org.springframework.security.web.header.HeaderWriterFilter@45545e7a, org.springframework.security.web.csrf.CsrfFilter@7c281eb8, org.springframework.security.web.authentication.logout.LogoutFilter@5e13f156, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5be052ca, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2007435e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@65afeb6d, org.springframework.security.web.session.SessionManagementFilter@46e190ed, org.springframework.security.web.access.ExceptionTranslationFilter@3e05586b]
+2025-02-27 23:02:22,602 INFO Adding welcome page: class path resource [static/index.html]
 
-2025-02-26 14:21:10,547 INFO Adding welcome page: class path resource [static/index.html]
+2025-02-27 23:02:22,764 WARN You are asking Spring Security to ignore Ant [pattern='/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
 
-2025-02-26 14:21:10,676 INFO Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-02-27 23:02:22,765 INFO Will not secure Ant [pattern='/**']
 
-2025-02-26 14:21:10,683 WARN You are asking Spring Security to ignore Ant [pattern='/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-02-27 23:02:22,773 INFO Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@f0a66bd, org.springframework.security.web.context.SecurityContextPersistenceFilter@250b5e5b, org.springframework.security.web.header.HeaderWriterFilter@32faa16c, org.springframework.security.web.csrf.CsrfFilter@6fcd31c3, org.springframework.security.web.authentication.logout.LogoutFilter@3fc7c734, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@34be065a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@557b6a37, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@460b50df, org.springframework.security.web.session.SessionManagementFilter@73613ae5, org.springframework.security.web.access.ExceptionTranslationFilter@67bf0480]
 
-2025-02-26 14:21:10,683 INFO Will not secure Ant [pattern='/**']
+2025-02-27 23:02:22,783 INFO Exposing 1 endpoint(s) beneath base path '/actuator'
 
-2025-02-26 14:21:10,683 WARN You are asking Spring Security to ignore Mvc [pattern='/prometheus']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-02-27 23:02:22,798 INFO Tomcat started on port(s): 8848 (http) with context path '/nacos'
 
-2025-02-26 14:21:10,683 INFO Will not secure Mvc [pattern='/prometheus']
+2025-02-27 23:02:22,807 INFO Nacos started successfully in stand alone mode. use embedded storage
 
-2025-02-26 14:21:10,683 WARN You are asking Spring Security to ignore Mvc [pattern='/prometheus/namespaceId/{namespaceId}']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2025-02-27 23:02:23,799 INFO Initializing Servlet 'dispatcherServlet'
 
-2025-02-26 14:21:10,683 INFO Will not secure Mvc [pattern='/prometheus/namespaceId/{namespaceId}']
-
-2025-02-26 14:21:10,683 WARN You are asking Spring Security to ignore Mvc [pattern='/prometheus/namespaceId/{namespaceId}/service/{service}']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
-
-2025-02-26 14:21:10,683 INFO Will not secure Mvc [pattern='/prometheus/namespaceId/{namespaceId}/service/{service}']
-
-2025-02-26 14:21:10,700 INFO Tomcat started on port(s): 8848 (http) with context path '/nacos'
-
-2025-02-26 14:21:10,705 INFO No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
-
-2025-02-26 14:21:10,714 INFO Nacos started successfully in stand alone mode. use embedded storage
-
-2025-02-26 14:21:16,400 INFO Initializing Servlet 'dispatcherServlet'
-
-2025-02-26 14:21:16,401 INFO Completed initialization in 1 ms
+2025-02-27 23:02:23,800 INFO Completed initialization in 1 ms
 

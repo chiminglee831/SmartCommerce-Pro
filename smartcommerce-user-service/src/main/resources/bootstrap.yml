@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: smartcommerce-user-service
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${NACOS_HOST:localhost}:${NACOS_PORT:8848}
+        namespace: ${NACOS_NAMESPACE:public}
+        group: ${NACOS_GROUP:DEFAULT_GROUP}
+      config:
+        server-addr: ${NACOS_HOST:localhost}:${NACOS_PORT:8848}
+        namespace: ${NACOS_NAMESPACE:public}
+        group: ${NACOS_GROUP:DEFAULT_GROUP}
+        file-extension: yaml
+        refresh-enabled: true
+        extension-configs:
+          - data-id: smartcommerce-user-service.yaml
+            group: ${NACOS_GROUP:DEFAULT_GROUP}
+            refresh: true
